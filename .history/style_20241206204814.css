@@ -118,7 +118,7 @@ body {
   /* For tablets and smaller devices */
   @media (max-width: 1024px) {
     .content-wrapper {
-      width: 90%; 
+      width: 90%; /* Narrow the content wrapper */
     }
   
     .card-img {
@@ -130,43 +130,43 @@ body {
   /* For mobile devices (landscape and portrait) */
   @media (max-width: 768px) {
     .navbar {
-      flex-direction: column; 
+      flex-direction: column; /* Stack navbar items */
       align-items: flex-start;
     }
   
     .tabs {
-      flex-direction: column; 
+      flex-direction: column; /* Stack tabs vertically */
       align-items: flex-start;
       padding: 10px;
     }
   
     .content-wrapper {
-      width: 100%; 
+      width: 100%; /* Full width for mobile screens */
       padding: 10px;
     }
   
     .card {
-      flex-direction: column;
+      flex-direction: column; /* Stack card content vertically */
       align-items: center;
     }
   
     .card-img {
-      width: 100%; 
-      height: auto; 
+      width: 100%; /* Full width for mobile screens */
+      height: auto; /* Adjust height proportionally */
       margin: 0;
     }
   
     .card-content {
       padding: 15px;
-      text-align: center; 
+      text-align: center; /* Center-align text for mobile */
     }
   
     .modal-content {
-      width: 90%; 
+      width: 90%; /* Wider modal for smaller screens */
     }
   
     .tab-btn {
-      width: 100%; 
-      margin: 5px 0; 
+      width: 100%; /* Full width buttons */
+      margin: 5px 0; /* Add spacing between buttons */
     }
   }
