@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="btn">Back</a>
+  </header>
+
+  <main>
+    <h1>Blog</h1>
+    <section>
+      <h2>1. What is the Document Object Model (DOM)?</h2>
+      <p>
+        The Document Object Model (DOM) is a programming interface for web documents.
+        It represents the structure of a document as a tree of objects, where each node
+        corresponds to a part of the document (e.g., elements, attributes, text). The DOM
+        allows developers to access, manipulate, and modify the content, structure, and style
+        of a webpage dynamically using JavaScript.
+      </p>
+    </section>
+
+    <section>
+      <h2>2. How do you select an element from the DOM?</h2>
+      <p>
+        DOM elements can be selected using various JavaScript methods, such as:
+      </p>
+      <ul>
+        <li><code>document.getElementById('id')</code>: Selects an element by its ID.</li>
+        <li><code>document.querySelector('.class')</code>: Selects the first element matching a CSS selector.</li>
+        <li><code>document.querySelectorAll('.class')</code>: Selects all elements matching a CSS selector.</li>
+        <li><code>document.getElementsByClassName('class')</code>: Selects all elements with a specific class name.</li>
+        <li><code>document.getElementsByTagName('tag')</code>: Selects all elements with a specific tag name.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. What is event delegation in the context of the DOM, and why is it useful?</h2>
+      <p>
+        Event delegation is a technique in which a single event listener is added to a parent
+        element to manage events for its child elements. This works by taking advantage of
+        event bubbling, where an event propagates from the target element up to its ancestors.
+      </p>
+      <p>
+        **Why is it useful?**
+      </p>
+      <ul>
+        <li>It improves performance by reducing the number of event listeners attached to individual child elements.</li>
+        <li>It simplifies code maintenance, as the listener is managed on the parent instead of individual elements.</li>
+        <li>It handles dynamically added elements without requiring additional event listeners.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. How do you manipulate an element's attributes and styles using the DOM?</h2>
+      <p>
+        To manipulate an element's attributes:
+      </p>
+      <ul>
+        <li><code>element.setAttribute('attribute', 'value')</code>: Sets a new attribute or updates an existing one.</li>
+        <li><code>element.getAttribute('attribute')</code>: Retrieves the value of an attribute.</li>
+        <li><code>element.removeAttribute('attribute')</code>: Removes an attribute from the element.</li>
+      </ul>
+      <p>
+        To manipulate an element's styles:
+      </p>
+      <ul>
+        <li><code>element.style.property = 'value'</code>: Sets an inline style property (e.g., <code>element.style.color = 'red'</code>).</li>
+        <li><code>element.classList.add('class')</code>: Adds a class to the element.</li>
+        <li><code>element.classList.remove('class')</code>: Removes a class from the element.</li>
+        <li><code>element.classList.toggle('class')</code>: Toggles a class on or off.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

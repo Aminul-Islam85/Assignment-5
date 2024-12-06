@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Bangladesh</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <button class="btn" id="blog-btn">Blog</button>
+    <img src="images/logo.png" alt="Logo" class="logo">
+    <div class="balance">
+      <img src="images/coin.png" alt="Coin" class="icon">
+      <span id="account-balance">5500 BDT</span>
+    </div>
+  </header>
+
+  <main>
+    <div class="tabs">
+      <button class="tab-btn active" id="donation-tab">Donation</button>
+      <button class="tab-btn" id="history-tab">History</button>
+    </div>
+
+    <section id="donation-section">
+      <div class="card">
+        <img src="images/noakhali.png" alt="Noakhali" class="card-img">
+        <div class="card-content">
+          <h3>Donate for Flood at Noakhali, Bangladesh</h3>
+          <p>The recent floods in Noakhali have caused damage to homes...</p>
+          <p><strong>Current Donation:</strong> <span id="noakhali-donation">0 BDT</span></p>
+          <input type="number" id="noakhali-input" placeholder="Enter amount">
+          <button class="donate-btn" data-id="noakhali">Donate Now</button>
+        </div>
+      </div>
+      <!-- Repeat similar structure for Feni and Quota Movement -->
+    </section>
+
+    <section id="history-section" class="hidden">
+      <ul id="history-list"></ul>
+    </section>
+  </main>
+
+  <div id="modal" class="hidden">
+    <div class="modal-content">
+      <h2>Congrats!</h2>
+      <p>You have donated for humankind successfully.</p>
+      <button id="close-modal">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Bangladesh</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="blog.html" class="tab-btn">Blog</a>
+    <img src="images/logo.png" alt="Logo" class="logo">
+    <div class="balance">
+      <img src="images/coin.png" alt="Coin" class="icon">
+      <span id="account-balance">5500 BDT</span>
+    </div>
+  </header>
+
+  <div class="content-wrapper">
+    <main>
+        <div class="tabs">
+          <button class="tab-btn active" id="donation-tab">Donation</button>
+          <button class="tab-btn" id="history-tab">History</button>
+        </div>
+    
+        <section id="donation-section">
+          <!-- Card 1 -->
+          <div class="card">
+            <img src="images/noakhali.png" alt="Noakhali" class="card-img">
+            <div class="card-content">
+              <h3>Donate for Flood at Noakhali, Bangladesh</h3>
+              <p>The recent floods in Noakhali have caused damage to homes...</p>
+              <p><strong>Current Donation:</strong> <span id="noakhali-donation">0 BDT</span></p>
+              <input type="number" id="noakhali-input" placeholder="Enter amount">
+              <button class="donate-btn" data-id="noakhali">Donate Now</button>
+            </div>
+          </div>
+    
+          <!-- Card 2 -->
+          <div class="card">
+            <img src="images/feni.png" alt="Feni" class="card-img">
+            <div class="card-content">
+              <h3>Donate for Flood Relief in Feni, Bangladesh</h3>
+              <p>The recent floods in Feni have devastated communities...</p>
+              <p><strong>Current Donation:</strong> <span id="feni-donation">0 BDT</span></p>
+              <input type="number" id="feni-input" placeholder="Enter amount">
+              <button class="donate-btn" data-id="feni">Donate Now</button>
+            </div>
+          </div>
+    
+          <!-- Card 3 -->
+          <div class="card">
+            <img src="images/quota-protest.png" alt="Quota Protest" class="card-img">
+            <div class="card-content">
+              <h3>Aid for Injured in the Quota Movement</h3>
+              <p>Support injured individuals from the quota movement protests...</p>
+              <p><strong>Current Donation:</strong> <span id="quota-donation">0 BDT</span></p>
+              <input type="number" id="quota-input" placeholder="Enter amount">
+              <button class="donate-btn" data-id="quota">Donate Now</button>
+            </div>
+          </div>
+        </section>
+    
+        <section id="history-section" class="hidden">
+          <ul id="history-list"></ul>
+        </section>
+      </main>
+</div>
+
+  <div id="modal" class="hidden">
+    <div class="modal-content">
+      <h2>Congrats!</h2>
+      <p>You have donated for humankind successfully.</p>
+      <button id="close-modal">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

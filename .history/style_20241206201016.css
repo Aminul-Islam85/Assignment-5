@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
+  .icon {
+    height: 20px;
+    margin-right: 5px;
+  }
+   
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .tab-btn {
+    margin: 0 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background: lightgray;
+    color: black;
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block; 
+    cursor: pointer;
+  }
+  
+  .tab-btn:hover {
+    background: limegreen;
+    color: white;
+  }
+  
+  
+  .tab-btn.active {
+    background: limegreen;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .card {
+    display: flex;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .card-img {
+    width: 300px;
+    height: 250px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 15px;
+    flex: 1;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+
+  .content-wrapper {
+    width: 75%; 
+    margin: 0 auto; 
+    padding: 20px 0; 
+  }
+  
+  #modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
